@@ -2,7 +2,7 @@
     display:grid;
     grid-template-columns: 100px 400px auto 80px 1px 80px 1px 80px 1px 100px;
     grid-template-rows:5px 50px 8px 30px 30px; 
-    background:#ABA361	;
+    background:#4457FF	;
     z-index: -2;
     margin-left: 100px;
     margin-right: 100px;
@@ -12,8 +12,8 @@
     grid-row:4;
     grid-column-start:2;
     grid-column-end:9;
-    background:#420C14;
-    border-top: #732C2C
+    background:#B28E0C;
+    color:#1E2DB2;
 }
 
 #line1 {
@@ -38,7 +38,7 @@
     margin-top:3px;
 }
 #name {
-    color:#732C2C	;
+    color:#1E2DB2	;
     grid-column-start:2;
     grid-column-end:3;
     grid-row-start:2;
@@ -133,11 +133,11 @@
 
 a {
     text-decoration: none;
-    color: #732C2C
+    color: #1E2DB2;
 }
 
 html {
-    background: #5F2525	;
+    background: #5E6EFF	;
     font-family: "dosis";
     z-index: -99999999;
 }

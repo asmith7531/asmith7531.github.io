@@ -98,7 +98,7 @@
 #body {
     display:grid;
     grid-template-columns: 200px 300px auto;
-    grid-template-rows:30px 2px 30px 30px 40px 30px 30px 30px 40px 30px 30px 30px 40px 150px; 
+    grid-template-rows:30px 2px 30px 3px 10px 30px 30px 30px 3px 10px 30px 30px 30px 3px 10px 100px; 
     color:#EFF7CF;
 }
 
@@ -128,12 +128,12 @@
     background:#420C14;
 }
 #emailLine {
-    grid-row-start: 7;
+    grid-row-start: 9;
     grid-column-end:3;
     grid-column-start: 2;
     background:#420C14;
 }#messageLine {
-    grid-row-start: 10;
+    grid-row-start: 14;
     grid-column-end:3;
     grid-column-start: 2;
     background:#420C14;
@@ -158,13 +158,13 @@ html {
 #inputEmail {
     grid-column-start: 2;
     grid-column-end:3;
-    grid-row-start:9;
+    grid-row-start:11;
 }
 
 #inputMessage {
     grid-column-start: 2;
     grid-column-end:3;
-    grid-row-start:12;
+    grid-row-start:16;
 }
 
 .text {
@@ -176,18 +176,21 @@ html {
     grid-column-end:3;
     grid-row-start:3;
     z-index: 1;
+    font-size:30px;
 }
 
 #email {
     grid-column-start: 2;
     grid-column-end:3;
-    grid-row-start:6;
+    grid-row-start:8;
     z-index: 1;
+    font-size:30px;
 }
 
 #message {
     grid-column-start: 2;
     grid-column-end:3;
-    grid-row-start:9;
+    grid-row-start:13;
     z-index: 1;
+    font-size:30px;
 }
