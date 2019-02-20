@@ -1,0 +1,155 @@
+.header {
+    display:grid;
+    grid-template-columns: 100px 200px auto 80px 1px 80px 1px 80px 1px 100px;
+    grid-template-rows:5px 50px 8px 30px 30px; 
+    background:#ABA361	;
+    z-index: -2;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.navBar {
+    grid-row:4;
+    grid-column-start:2;
+    grid-column-end:9;
+    background:#420C14;
+    border-top: #732C2C
+}
+
+#line1 {
+    grid-column-start:5;
+    grid-column-end: 6;
+    grid-row-start:4;
+    grid-row-end:5;
+    background:#ABA361;
+    z-index: 3;
+    margin-top:3px;
+    margin-bottom: 3px;
+}
+
+#line2 {
+    grid-column-start:7;
+    grid-column-end: 8;
+    grid-row-start:4;
+    grid-row-end:5;
+    background: #ABA361;
+    z-index: 3;
+    margin-bottom: 3px;
+    margin-top:3px;
+}
+#name {
+    color:#732C2C	;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:4;
+    padding:unset;
+    text-align:center;
+}
+
+#about {
+    background:unset;
+    color: #732C2C;
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:4;
+    grid-row-end:5;
+    padding:unset;
+    text-align:center;
+    z-index: 3;
+    padding-left:20px;
+    padding-top:6px;
+}
+
+#portfolio {
+    background:unset;
+    color: #732C2C;
+    grid-column-start:5;
+    grid-column-end:6;
+    grid-row-start:4;
+    grid-row-end:5;
+    padding-left:15px;
+    padding-top:6px;    
+    z-index: 3;
+}
+
+#contact {
+    
+    color: #732C2C;
+    grid-column-start:7;
+    grid-column-end:8;
+    grid-row-start:4;
+    grid-row-end:5;
+    padding-top:6px;
+    padding-left:20px;
+    text-align:center;
+    z-index: 3;
+}
+
+/*about page specific css */
+#bioPic {
+    width: 300px;
+    height: auto;
+    grid-row-start:3;
+    grid-column-start:2;
+}
+
+#body {
+    display:grid;
+    grid-template-columns: 100px 301px 50px 400px auto  300px;
+    grid-template-rows:40px 30px 40px 10px 10px 10px auto; 
+    color:#EFF7CF;
+}
+
+#aboutMeTitle {
+    grid-column-start: 4;
+    grid-row-start: 3;
+    color:#ABA361
+}
+
+#aboutMeContent {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+}
+
+#bodyLine {
+    grid-row-start: 5;
+    grid-column-start: 4;
+    background:#588c7e;
+    z-index: 3;
+
+}
+
+
+/*contact page specific css*/
+#bodyContact {
+    display:grid;
+    grid-template-columns: 100px 301px 50px 400px auto  300px;
+    grid-template-rows:40px 30px 40px 10px 10px 10px auto; 
+    color:#EFF7CF;
+}
+
+a {
+    text-decoration: none;
+    color: #732C2C
+}
+
+html {
+    background: #5F2525	;
+    font-family: "dosis";
+    z-index: -99999999;
+}
+
+
+#inputName {
+
+}
+
+#inputEmail {
+
+}
+
+#inputMessage {
+
+}
