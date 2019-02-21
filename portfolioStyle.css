@@ -1,28 +1,45 @@
+/*@keyframes title {
+    0% {color:gray}
+    100% {color: black}
+}
+
+@keyframes navBar {
+    0% {width:0px;background:black;}
+    100% {width:400px;background:darkgray;}
+}
+
+@keyframes header {
+    0% {background: black;}
+    100% {background:rgb(53, 53, 53); }
+}*/
 .header {
     display:grid;
-    grid-template-columns: 100px 200px auto 80px 1px 80px 1px 80px 1px 100px;
-    grid-template-rows:5px 50px 8px 30px 30px; 
-    background:#ABA361;
+    grid-template-columns: 100px 400px auto 80px 2px 80px 1px 80px 2px 100px;
+    grid-template-rows:5px 50px 5px 5px 30px 30px; 
+    background:rgb(53, 53, 53)	;
     z-index: -2;
     margin-left: 100px;
     margin-right: 100px;
+    animation: header 8s 1 forwards;
 }
 
 .navBar {
     grid-row:4;
-    grid-column-start:2;
-    grid-column-end:9;
-    background:#420C14;
-    border-top: #732C2C
-}
+    grid-column-start: 2;
+    animation: navBar 8s  1 forwards;
+    z-index:50;
+    }
+    
+
+
 
 #line1 {
     grid-column-start:5;
     grid-column-end: 6;
     grid-row-start:4;
     grid-row-end:5;
-    background:#ABA361;
-    z-index: 3;
+    background:black;
+    z-index: 300000;
     margin-top:3px;
     margin-bottom: 3px;
 }
@@ -32,25 +49,27 @@
     grid-column-end: 8;
     grid-row-start:4;
     grid-row-end:5;
-    background: #ABA361;
-    z-index: 3;
+    background: black;
+   z-index: 3;
     margin-bottom: 3px;
     margin-top:3px;
 }
 #name {
-    color:#732C2C	;
+    color:black	;
+    font-family:  'Cinzel', serif;
     grid-column-start:2;
     grid-column-end:3;
     grid-row-start:2;
     grid-row-end:4;
     padding:unset;
     text-align:center;
-    font-size:50px;
+    font-size: 60px;
+    animation:title 8s 1 forwards;
 }
 
 #about {
     background:unset;
-    color: #732C2C;
+    color: black;
     grid-column-start:4;
     grid-column-end:5;
     grid-row-start:4;
@@ -60,10 +79,12 @@
     z-index: 3;
     padding-left:20px;
     padding-top:6px;
+    ;
 }
+
 #portfolio {
     background:unset;
-    color: #732C2C;
+    color: black;
     grid-column-start:5;
     grid-column-end:6;
     grid-row-start:4;
@@ -71,11 +92,12 @@
     padding-left:15px;
     padding-top:6px;    
     z-index: 3;
-
+    
 }
+
 #contact {
     
-    color: #732C2C;
+    color: black;
     grid-column-start:7;
     grid-column-end:8;
     grid-row-start:4;
@@ -84,7 +106,25 @@
     padding-left:20px;
     text-align:center;
     z-index: 3;
+   
 }
+
+html {
+    background: #272727	;
+    font-family: "dosis";
+    z-index: -99999999;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: #272727;
+}
+
 /*portfolio page specific css*/
 #body {
     display:grid;
@@ -94,10 +134,11 @@
 }
 a {
     text-decoration: none;
-    color: #732C2C
+    color: black;
 }
 html {
-    background: #5F2525	;
+    background: #2727272;
     font-family: "dosis";
     z-index: -99999999;
+}
 }

@@ -1,27 +1,41 @@
+/*@keyframes title {
+    0% {color:gray}
+    100% {color: black}
+}
+
+@keyframes navBar {
+    0% {width:0px;background:black;}
+    100% {width:400px;background:darkgray;}
+}
+
+@keyframes header {
+    0% {background: black;}
+    100% {background:rgb(53, 53, 53); }
+}*/
+
 .header {
     display:grid;
     grid-template-columns: 100px 400px auto 80px 1px 80px 1px 80px 1px 100px;
-    grid-template-rows:5px 50px 8px 30px 30px; 
-    background:#ABA361	;
+    grid-template-rows:5px 50px 5px 5px 30px 30px; 
+    background:rgb(53, 53, 53)	;
     z-index: -2;
     margin-left: 100px;
     margin-right: 100px;
+    animation: header 8s 1 forwards;
 }
 
 .navBar {
     grid-row:4;
-    grid-column-start:2;
-    grid-column-end:9;
-    background:#420C14;
-    border-top: #732C2C
-}
-
+    grid-column-start: 2;
+    animation: navBar 8s  1 forwards;
+    }
+    
 #line1 {
     grid-column-start:5;
     grid-column-end: 6;
     grid-row-start:4;
     grid-row-end:5;
-    background:#ABA361;
+    background:black;
     z-index: 3;
     margin-top:3px;
     margin-bottom: 3px;
@@ -32,25 +46,41 @@
     grid-column-end: 8;
     grid-row-start:4;
     grid-row-end:5;
-    background: #ABA361;
-    z-index: 3;
+    background: black;
+   z-index: 3;
     margin-bottom: 3px;
     margin-top:3px;
 }
+
 #contactMe {
-    color:#732C2C	;
+    color:black	;
+    font-family:  'Cinzel', serif;
     grid-column-start:2;
     grid-column-end:3;
     grid-row-start:2;
     grid-row-end:4;
-    padding:unset;
+    padding-right:10px;
     text-align:center;
-    font-size:60px;
+    font-size: 60px;
+    animation:title 8s 1 forwards;
+}
+
+#name {
+    color:black	;
+    font-family:  'Cinzel', serif;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:4;
+    padding-right:10px;
+    text-align:center;
+    font-size: 60px;
+    animation:title 8s 1 forwards;
 }
 
 #about {
     background:unset;
-    color: #732C2C;
+    color: black;
     grid-column-start:4;
     grid-column-end:5;
     grid-row-start:4;
@@ -60,11 +90,12 @@
     z-index: 3;
     padding-left:20px;
     padding-top:6px;
+    ;
 }
 
 #portfolio {
     background:unset;
-    color: #732C2C;
+    color: black;
     grid-column-start:5;
     grid-column-end:6;
     grid-row-start:4;
@@ -72,11 +103,12 @@
     padding-left:15px;
     padding-top:6px;    
     z-index: 3;
+    
 }
 
 #contact {
     
-    color: #732C2C;
+    color: black;
     grid-column-start:7;
     grid-column-end:8;
     grid-row-start:4;
@@ -85,7 +117,25 @@
     padding-left:20px;
     text-align:center;
     z-index: 3;
+   
 }
+
+html {
+    background: #272727	;
+    font-family: "dosis";
+    z-index: -99999999;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: black;
+}
+
 
 /*about page specific css */
 #bioPic {
@@ -125,34 +175,28 @@
     grid-row-start: 4;
     grid-column-end:3;
     grid-column-start: 2;
-    background:#420C14;
+    background:black;
 }
+
 #emailLine {
     grid-row-start: 9;
     grid-column-end:3;
     grid-column-start: 2;
-    background:#420C14;
-}#messageLine {
+    background:black;
+}
+
+#messageLine {
     grid-row-start: 14;
     grid-column-end:3;
     grid-column-start: 2;
-    background:#420C14;
-}
-a {
-    text-decoration: none;
-    color: #732C2C
-}
-
-html {
-    background: #5F2525	;
-    font-family: "dosis";
-    z-index: -99999999;
+    background:black;
 }
 
 #inputName {
     grid-column-start: 2;
     grid-column-end:3;
     grid-row-start:6;
+
 }
 
 #inputEmail {
@@ -167,12 +211,8 @@ html {
     grid-row-start:16;
 }
 
-.text {
-    color:#ABA361
-}
-
 #name {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end:3;
     grid-row-start:3;
     z-index: 1;
@@ -185,6 +225,9 @@ html {
     grid-row-start:8;
     z-index: 1;
     font-size:30px;
+    font-family:  'Cinzel', serif;
+    color:black;
+
 }
 
 #message {
@@ -193,4 +236,13 @@ html {
     grid-row-start:13;
     z-index: 1;
     font-size:30px;
+    font-family:  'Cinzel', serif;
+    color:black
+}
+
+#bioPic {
+    width: 300px;
+    height: auto;
+    grid-row-start: 2;
+    grid-column-start: 4;
 }
