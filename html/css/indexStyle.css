@@ -1,0 +1,108 @@
+@keyframes jumbo {
+    0% {color:#2261BA}
+    100% {color: white}
+}
+
+@keyframes hello {
+    0% {color: #2261BA;}
+    100% {color:#BA8724;}
+}
+@keyframes name {
+    0% {color: #2261BA;}
+    100% {color:white;}
+}
+
+@keyframes welcome {
+    0% {color: #2261BA;}
+    100% {color:white;}
+}
+
+@keyframes buttons {
+    0% {color: #2261BA;}
+    0% {color:#BA8724}
+}
+
+html {
+    background: #BABABA	;
+    font-family: "dosis";
+    z-index: -99999999;
+    background: #ffffff url("images/sasha-stories-104504-unsplash\ \(1\).jpg") no-repeat center center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #BA8724;
+    animation: buttons 15s 1 forwards;
+    background: #2261BA
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: white;
+}
+
+body {
+
+    height: auto;
+    margin: 50px;
+    
+}
+p {
+    font-size:16px;
+    line-height:24px;
+}
+
+.jumbotron {
+    background: #2261BA;
+    text-align: center;
+    opacity: 0.7;
+    animation: hello 2s forwards;
+}
+
+.btn {
+    background: #BA8724;
+    margin-top:1.5%;
+    color: #bababa;
+    animation: buttons 15s forwards;
+}
+
+.nav {
+    opacity: 0.7;;
+}
+
+.card {
+    margin:10%;
+}
+
+.form {
+    padding-top:15px;
+    margin-left:100px;
+}
+
+#name {
+    margin-top:1.5%;
+    margin-bottom:1.5%;
+    font-size: 24px;
+    animation: name 5s forwards;
+    opacity: 1.0;
+}
+
+#welcome {
+    margin-top:1.5%;
+    font-size:24px;
+    animation: name 12s forwards;
+    opacity: 1.0;
+}
+
+.aboutMeContent {
+    color:white;
+    line-height: 32px;
+    font-size: 16px;
+
+}
+
+#aboutMeTitle {
+    color: #2261BA;
+    font-size: 24px;
+}
